@@ -14,9 +14,9 @@ int main() {
 
     int price[products];
 
-    for (int i = 1; i <= products; i++){
+    for (int i = 0; i < products; i++){
 
-        cout <<"請輸入第" << i << "個商品金額";
+        cout <<"請輸入第" << i + 1 << "個商品金額";
 
         cin >> price[i];
 
