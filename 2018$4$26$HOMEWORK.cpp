@@ -28,6 +28,6 @@ int main() {
             biggestPrice = i;
         }
     }
-    cout << "第一位找零" << 100 - biggestPrice%100 << "元\n";
-    cout << "第二位找零" << 100 - (allCost - biggestPrice)%100 << "元\n";
+    cout << "第一位找零" << 100 - biggestPrice%100 + biggestPrice/100 << "元\n";
+    cout << "第二位找零" << 100 - (allCost - biggestPrice)%100 + (allCost - biggestPrice)/100<< "元\n";
 }
